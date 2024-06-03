@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/border_layout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/cartProductImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@color/Red"
+                android:scaleType="fitXY"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:id="@+id/cartProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Product Name"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cartProductMinus"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_layout"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/cartProductQuantity"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/cartProductPlus"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_layout"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorAccent"/>
+
+                <ImageView
+                    android:id="@+id/cartProductDelete"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/delete_icon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

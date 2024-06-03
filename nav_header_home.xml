@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="341dp"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:id="@+id/nav_header_container">
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="225dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <!--<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_user"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/app_icon"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="3dp"
+                        app:civ_circle_background_color="@color/colorPrimary" />
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pts_bold"
+                        android:gravity="left"
+                        android:text="Hello, Xyz"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/option_logout"
+                    android:layout_width="27dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/logout_icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grayline"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nav_user_rank5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@android:color/transparent"
+                android:fontFamily="@font/pts_bold"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/blackRWN"
+                android:textSize="22sp"
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@android:color/transparent"
+                android:fontFamily="@font/pts_bold"
+                android:text="Last Match"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="35dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#00D4AA" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+
+            <TextView
+                android:id="@+id/nav_user_wins5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pts_bold"
+                android:text="-"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:textSize="22sp"
+                android:textColor="@color/blackRWN"
+                android:backgroundTint="@android:color/transparent"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pts_bold"
+                android:text="Wins"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:backgroundTint="@android:color/transparent"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="35dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#E8B827"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/nav_user_nextMatch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pts_bold"
+                android:text="-"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:textSize="22sp"
+                android:textColor="@color/blackRWN"
+                android:backgroundTint="@android:color/transparent"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pts_bold"
+                android:text="Next Match"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:backgroundTint="@android:color/transparent"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="35dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#596BCD"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:background="@color/grayline"/>
+
+</LinearLayout>
+
+
